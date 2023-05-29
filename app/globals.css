@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave-animation {
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.delay-0s {
+  animation-delay: 0s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+}
+
+.delay-3s {
+  animation-delay: 3s;
+}
+
+.delay-4s {
+  animation-delay: 4s;
+}
+
+.delay-5s {
+  animation-delay: 5s;
+}
